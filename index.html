@@ -397,36 +397,87 @@ img { max-width: 100%; display: block; }
 /* ========== MOBILE ========== */
 @media (max-width: 768px) {
   .site-header-nav, .site-header-phone { display: none; }
-  .hero h1 { font-size: 42px; }
+  .site-header { padding: 12px 16px; }
+  .site-header-logo img { height: 40px; }
+  .hero { padding: 60px 20px 40px; }
+  .hero-badge { font-size: 11px; letter-spacing: 1px; padding: 8px 16px; margin-bottom: 20px; }
+  .hero h1 { font-size: 38px; letter-spacing: -1px; margin-bottom: 14px; }
+  .hero-sub { font-size: 18px; margin-bottom: 28px; }
+  .hero-cta { padding: 18px 48px; font-size: 18px; }
   .hero-proof-divider { display: none; }
-  .hero-trust { gap: 12px; }
-  .mat-cards { grid-template-columns: 1fr; }
-  .size-cards { grid-template-columns: 1fr; }
-  .extras-grid { grid-template-columns: 1fr 1fr; }
-  .custom-result-grid { grid-template-columns: 1fr !important; }
-  .quote-grid { grid-template-columns: 1fr; }
-  .page-split { grid-template-columns: 1fr; }
-  .page-split-img { height: 300px; }
+  .hero-trust { gap: 10px; margin-top: 14px; }
+  .hero-trust-item { font-size: 13px; }
+  .hero-proof { gap: 16px; margin-top: 24px; }
+  .hero-proof-item { font-size: 15px; }
+  /* Progress bar */
+  .progress-bar { padding: 0 12px; height: 52px; }
+  .progress-logo img { height: 32px; }
   .progress-steps { overflow-x: auto; }
+  .progress-step { padding: 0 10px; }
   .progress-step .step-text { display: none; }
+  .progress-step .step-num { width: 24px; height: 24px; font-size: 12px; }
+  .progress-step::after { width: 10px; right: -5px; }
+  .progress-price { font-size: 20px; }
+  .progress-price small { font-size: 10px; }
+
+  /* Page content */
+  .page-center { padding: 24px 20px 80px; }
+  .page-title { font-size: 28px !important; }
+  .page-sub { font-size: 15px; margin-bottom: 20px; }
+
+  /* Material cards */
+  .mat-cards { grid-template-columns: 1fr; gap: 16px; }
+  .mat-card-img { height: 200px; }
+  .mat-card-body { padding: 20px; }
+  .mat-card-name { font-size: 24px; }
+  .mat-card-price { font-size: 22px; }
+
+  /* Size cards */
+  .size-cards { grid-template-columns: 1fr 1fr !important; gap: 12px; }
+  .size-card-img { height: 150px; }
+  .size-card-body { padding: 14px 12px; }
+  .size-card-name { font-size: 20px; }
+  .size-card-dim { font-size: 14px; }
+  .size-card-desc { font-size: 13px; margin-bottom: 8px; }
+  .size-card-price { font-size: 22px; }
+  .mount-toggle { margin-bottom: 24px; }
+  .mount-btn { padding: 10px 20px; font-size: 14px; }
+
+  /* Add-on split pages */
   .page-split { grid-template-columns: 1fr !important; }
-  .page-split-img { height: 280px; }
-  .page-split-content { padding: 32px 24px !important; }
-  .page-title { font-size: 36px !important; }
-  .mat-card-img { height: 240px; }
-  .size-cards { grid-template-columns: 1fr 1fr !important; }
-  .size-card-img { height: 180px; }
-  /* Mobile floating CTA */
-  .mobile-float-cta {
-    display: flex !important;
-    position: fixed; bottom: 16px; left: 16px; right: 16px; z-index: 300;
-    padding: 18px; background: var(--warm); color: #fff; border: none;
-    border-radius: 12px; font-size: 18px; font-weight: 800; text-align: center;
-    justify-content: center; align-items: center; gap: 8px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-  }
-  .progress-step .step-text { display: none; }
-  .progress-price { font-size: 22px; }
+  .page-split-img { height: 220px; }
+  .page-split-content { padding: 24px 20px !important; }
+
+  /* Extras grid */
+  .extras-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .extra-img { height: 100px; }
+  .extra-body { padding: 12px 10px; }
+  .extra-name { font-size: 14px; }
+  .extra-price { font-size: 18px; }
+
+  /* Custom AI page */
+  .custom-result-grid { grid-template-columns: 1fr !important; }
+  .custom-examples { gap: 8px; }
+  .custom-example { padding: 10px 16px; font-size: 14px; }
+  .custom-ta { font-size: 16px; min-height: 100px; }
+  .custom-input-box { padding: 20px; }
+  #customSplitView > div { grid-template-columns: 1fr !important; }
+
+  /* Quote page */
+  .quote-grid { grid-template-columns: 1fr; gap: 20px; }
+  .quote-card-head { padding: 16px 20px; }
+  .quote-card-head h3 { font-size: 18px; }
+  .quote-card-body { padding: 16px 20px; }
+  .quote-total-val { font-size: 34px; }
+  .quote-actions { padding: 0 20px 20px; }
+  .quote-photo img { height: 300px; }
+
+  /* Nav buttons */
+  .page-nav { padding: 12px 16px; }
+  .nav-back { padding: 12px 20px; font-size: 13px; }
+  .nav-next { padding: 14px 28px; font-size: 15px; }
+
+  .mobile-float-cta { display: none !important; }
 }
 </style>
 </head>
