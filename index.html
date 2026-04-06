@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Build Your Outdoor Shower | Cape Cod Shower Kits</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -421,7 +421,7 @@ img { max-width: 100%; display: block; }
   .progress-price small { font-size: 10px; }
 
   /* Page content */
-  .page-center { padding: 24px 20px 12vh; }
+  .page-center { padding: 24px 20px calc(20px + env(safe-area-inset-bottom)); }
   .page-title { font-size: 28px !important; }
   .page-sub { font-size: 15px; margin-bottom: 20px; }
 
@@ -444,11 +444,11 @@ img { max-width: 100%; display: block; }
   .mount-btn { padding: 10px 20px; font-size: 14px; }
 
   /* Add-on split pages */
-  .page-split { grid-template-columns: 1fr !important; }
+  .page-split { grid-template-columns: 1fr !important; min-height: auto; }
   .page-split-img { height: 220px; }
-  .page-split-content { padding: 24px 20px 12vh !important; }
-  .page-split-content .btn-warm { padding: 14px 24px; font-size: 14px; }
-  .page-split-content .btn-outline { padding: 14px 20px; font-size: 14px; }
+  .page-split-content { padding: 24px 20px calc(20px + env(safe-area-inset-bottom)) !important; }
+  .page-split-content .btn-warm { padding: 16px 32px; font-size: 16px; }
+  .page-split-content .btn-outline { padding: 16px 28px; font-size: 16px; }
 
   /* Extras grid */
   .extras-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -709,7 +709,7 @@ img { max-width: 100%; display: block; }
           <div class="page-label">Add-On 4 of 5</div>
           <h2 class="page-title" style="text-align:left;">Post Caps</h2>
           <p class="page-sub" style="text-align:left;">Finished look for all five posts. Small detail, big difference in the final appearance of your shower.</p>
-          <div style="font-family:'DM Serif Display',serif; font-size:40px; color:var(--teal-dark); margin-bottom:32px;">+$20</div>
+          <div style="font-family:'DM Serif Display',serif; font-size:40px; color:var(--teal-dark); margin-bottom:32px;">+$20 <span style="font-family:'Karla',sans-serif; font-size:16px; color:var(--muted); font-weight:400;">/post</span></div>
           <div style="display:flex; gap:14px; flex-wrap:wrap;">
             <button class="btn-warm" onclick="addExtra('caps',20); goPage(6)">Add Post Caps →</button>
             <button class="btn-outline" onclick="goPage(6)" style="border-color:var(--border); color:var(--muted);">Skip</button>
