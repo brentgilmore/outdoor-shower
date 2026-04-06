@@ -59,7 +59,7 @@ img { max-width: 100%; display: block; }
 
 /* ========== HERO ========== */
 .hero {
-  height: 100vh; width: 100vw;
+  height: 100vh; height: 100dvh; width: 100vw;
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4)),
     url('img/cedar-shower.jpg') center/cover no-repeat;
   display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
 
 /* ========== BUILDER CONTAINER ========== */
 .builder {
-  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; height: 100dvh;
   display: none; flex-direction: column; background: var(--white); z-index: 200;
 }
 .builder.active { display: flex; }
